@@ -18,7 +18,7 @@
     <!-- font google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Urbanist:wght@400;900&display=swap" rel="stylesheet">
 
     <!-- awsm font -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
@@ -45,7 +45,11 @@
                 <li><a href="#">Portfolio</a></li>               
                 <li><a href="#">Contact</a></li>
                 <div class="ip-detail">
-                    <p class="ip-ku" id="ip"></p>
+                    <div class="ip-ku">
+                        <p>Your IP :</p>
+                        <p id="ip"></p>
+                    </div>
+                    
                     <div class="ip-country">
                         <i class="fas fa-globe-asia">&#160</i>
                         <p id="country"></p>
@@ -57,43 +61,64 @@
     </header>
 
     <main>
-        <div>
+        <div class="all-content">
+            <!-- === -->
             <section>
-                <div class="content-container">
-                    <article>
+                <div class="content-container card">
                         <h1>Welcome To <br> My Digital Gallery</h1>
                         <p>May you find inspiration and beauty in every detail of the works I share.</p>
-                    </article>
-                    <div>
-                        <button>Here <i class="fa fa-arrow-down"></i></button>
-                    </div>
+                        <button><a href="#myskill">Here&#160</a><i class="fa fa-arrow-down"></i></button>
                 </div>
             </section>
-        </div>
-        <!-- <table border = 1 cellpadding = 5>
-            <tr>
-              <td>IP Address</td>
-
-            </tr>
-            <tr>
-              <td>ISP</td>
-              <td id = "isp"></td>
-            </tr>
-            <tr>
-              <td>Country</td>
-              <td id = "country"></td>
-            </tr>
-            <tr>
-              <td>City</td>
-              <td id = "city"></td>
-            </tr>
-            <tr>
-              <td>Google Maps</td>
-              <td>
-                <iframe src="" id = "gmaps" width="400" height="400"></iframe>
-              </td>
-            </tr>
-          </table> -->
+        <div class="body-article">
+            <section id="myskill">
+                    <article class="my-skill card">
+                        <h1>My Skill & Qualification</h1>
+                        <div class="skill-container">
+                            <div class="hard-skill">
+                                <h2>Hard Skill</h2>
+                                <ul>
+                                    <li>Mechanical Design</li>
+                                    <li>Engineering Drawing</li> 
+                                    <li>Manufacture Process</li>
+                                    <li>Finite Element Analysis (FEA)</li> 
+                                    <li>Occupational Safety and Health</li> 
+                                    <li>Graphic Design</li>
+                                </ul>
+                            </div>
+                            <div class="soft-skil">
+                                <h2>Soft Skill</h2>
+                                <ul>
+                                    <li>Team Work</li>
+                                    <li>Problem Solving</li>
+                                    <li>Communications</li>
+                                    <li>Interpersonal skill</li>
+                                    <li>Technical skill</li>
+                                    <li>Adaptive</li>
+                                    <li>Creative</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+            </section>
+        <!-- === -->
+        <aside>
+            <section id="profile">
+                <article class="profile card">
+                    <header>
+                        <h1>Abdany Afiq Khoiri</h1>
+                        <img src="assets/img/profil.jpg" alt="Abdany">
+                    </header>
+                    <blockquote>
+                        I am a bachelor of applied engineering with application to rollingstock. I have skills in Mechanical Design
+                        and Graphic Design. I had an internship as an Engineering Department Staff at PT Industri Kereta Api
+                        (Persero). Experience in various CAD Software AutoCAD, Inventore, SolidWorks and several Graphic Design
+                        Software such as Adobe Photoshop, Adobe Illustrator, CorelDRAW.
+                    </blockquote>
+                </article>
+            </section>
+        </aside>
+    </div>
     </main>
 
     <footer>

@@ -196,7 +196,7 @@ footer{
         padding: 1.5rem 3rem;
         width: 70%;
         height: 100vh;
-        position: absolute;
+        position: fixed;
         top: 0;
         left: -100%;
         z-index: 10;

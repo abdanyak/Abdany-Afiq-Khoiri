@@ -1,0 +1,297 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.nav-bar{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 1rem 2rem;
+/* background-color: lime; */
+}
+.name-art a{
+    color: black;
+    font-family: 'Agustina';
+    padding-right: 1rem;
+    text-decoration: none;
+    /* background-color: red; */
+}
+
+.nav-bar .menu{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+.nav-bar .menu li{
+    font-weight: bold;
+    list-style-type: none;
+}
+.nav-bar .menu li a{
+    position: relative;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 0 4px;
+}
+.nav-bar .menu li a:after{
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+.nav-bar .menu li a:hover{
+    color: black;
+}
+.nav-bar .menu li a:hover:after{
+    width: 100%;
+}
+.open-menu , .close-menu {
+    color: black;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+    align-self: center;
+}
+.ip-detail .ip-ku{
+    font-weight: bold;
+    display: none;
+}
+.ip-country{
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    /* border-bottom: 3px solid black; */
+}
+#check {
+    display: none;
+}
+/* ============================================== */
+.container-intro {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+    min-height: 90vh;
+}
+.container-text-intro .namaku{
+    display: flex;
+}
+.container-text-intro .container-text{
+    color: black;
+    font-weight: bold;
+    display: flex;
+}
+.container-text .sec-text{
+    color: #259AC2;
+}
+.container-intro .container-text-intro {
+    width: 50%;
+}
+.container-text-intro h3 {
+    letter-spacing: 2px;
+}
+.container-intro .container-text-intro p {
+    font-size: 0.8rem;
+}
+.container-intro .container-photo img{
+    width: 300px;
+    border: 3px solid #C1E4F0;
+    border-radius: 999px;
+}
+.container-intro button{
+    background-color: #C1E4F0;
+    margin: 1rem 0rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    padding: 1rem 3rem;
+    border-radius: 999px;
+    border: 3px solid #259AC2;
+    cursor: pointer;
+    color: #259AC2;
+
+    transform: translateY(0);
+    transition: all 0.5s linear;
+}
+.container-intro button:hover{
+    background-color: white;
+    transition: all 0.2s ease-in-out;
+    border: 3px solid;
+    transform: translateY(-4px);
+}
+/* ==================================== */
+.container-skill{
+    background-color: #C1E4F0;
+    min-height: 10vh;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container-skill h3{
+    text-align: center;
+    color: #259AC2;
+    border-bottom: 3px solid #259AC2;
+    letter-spacing: 2px;
+}
+.container-img-skill {
+    padding-top: 1rem;
+    text-align: center;
+}
+.container-img-skill img{
+    width: 3.5rem;
+    cursor: pointer;
+    padding: 5px;
+    margin: 0 auto;
+}
+
+/* ==================================== */
+.content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: black;
+    text-align: center;
+    padding: 1rem 1rem;
+}
+.content-container h1{
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+.content-container p{
+    font-size: 1rem;
+}
+.content-container button{
+    background-color: #C1E4F0;
+    margin: 1rem 0rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    padding: 1rem 3rem;
+    border-radius: 999px;
+    border: 3px solid #259AC2;
+    cursor: pointer;
+    color: #259AC2;
+
+    transform: translateY(0);
+    transition: all 0.5s linear;
+}
+.content-container button a{
+    color: #259AC2;
+    text-decoration: none;
+}
+.content-container button a:hover{
+    color: #259AC2;
+    text-decoration: none;
+}
+.content-container button:hover{
+    background-color: white;
+    transition: all 0.2s ease-in-out;
+    border: 3px solid;
+    transform: translateY(-4px);
+}
+
+footer{
+    padding: 1rem;
+    color: black;
+    background-color: #C1E4F0;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+@media(max-width: 800px){
+    .container-intro{
+        flex-direction: column;
+        text-align: center;
+        min-height: auto;
+    }
+    .container-intro .container-photo {
+        order: 1; /* Mengubah urutan elemen */
+    }
+    .container-intro .container-text-intro {
+        order: 2; /* Mengubah urutan elemen */
+    }
+    .container-intro .container-photo img{
+        width: 200px;
+        max-width: 100%;
+        height: auto;
+
+    }
+    .container-text-intro .namaku{
+        text-align: center;
+        justify-content: center;
+    }
+    .container-text {
+        text-align: center;
+        justify-content: center;
+    }
+    .off-canvas{
+        left: -100%;
+        position: fixed;
+        top: 0;
+        display:block;
+        background-color: rgba(0, 0, 0, 0.6);
+        width: 100%;
+        height: 100vh;
+    }
+    .menu {
+        flex-direction: column;
+        padding: 1.5rem 3rem;
+        width: 70%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        z-index: 100;
+        background-color: white;
+        transition: all 0.3s ease-in-out;
+    }
+    .menu .close-menu{
+        align-self: flex-end;
+    }
+    .menu li {
+        align-self: flex-start;
+        font-size: 1.5rem;
+    }
+    .open-menu , .close-menu {
+        display: block;
+    }
+    .ip-ku{
+        display: flex;
+        gap: 12px;
+    }
+    .ip-detail .ip-ku{
+        display: flex;
+        justify-content: flex-start;
+        padding-top: 8px;
+    }
+    .ip-detail{
+        position: absolute;
+        align-self: flex-start;
+        font-size: 1rem;
+        bottom: 1.5rem;
+    }
+    #check:checked ~ .menu {
+        left: 0;
+    }
+    #check:checked ~ .off-canvas{
+        left: 0;
+    }
+}

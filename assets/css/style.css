@@ -218,6 +218,7 @@ footer{
     .container-intro{
         flex-direction: column;
         text-align: center;
+        max-height: auto;
     }
     .container-intro .container-photo {
         order: 1; /* Mengubah urutan elemen */

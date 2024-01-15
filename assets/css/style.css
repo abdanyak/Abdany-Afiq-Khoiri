@@ -227,12 +227,12 @@ footer{
     }
     .container-intro .container-text-intro {
         order: 2; /* Mengubah urutan elemen */
+        width: 100%;
     }
     .container-intro .container-photo img{
         width: 200px;
         max-width: 100%;
         height: auto;
-
     }
     .container-text-intro .namaku{
         text-align: center;

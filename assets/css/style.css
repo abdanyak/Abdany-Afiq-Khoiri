@@ -30,7 +30,6 @@ padding: 1rem 2rem;
     align-items: center;
     font-size: 1.1rem;
 }
-
 .nav-bar .menu li{
     font-weight: bold;
     list-style-type: none;
@@ -220,7 +219,6 @@ footer{
     .container-intro{
         flex-direction: column;
         text-align: center;
-        min-height: auto;
     }
     .container-intro .container-photo {
         order: 1; /* Mengubah urutan elemen */
